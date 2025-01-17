@@ -1,0 +1,21 @@
+@layer components {
+  .tsf-radio-card {
+    @apply relative text-bold-md p-4 rounded-lg *:cursor-pointer cursor-pointer select-none w-full hover:bg-secondary-50 has-[:checked]:bg-secondary-100 has-[:checked]:text-primary-900 focus-within:bg-secondary-100;
+  }
+
+  .tsf-radio-card > input {
+    @apply appearance-none absolute top-0 w-full left-0 h-full rounded-lg border border-grey-300 hover:border-primary-500 tsf-focus checked:border-primary-500;
+  }
+
+  .tsf-radio-input {
+    @apply appearance-none cursor-pointer w-4 h-4 my-0.5 rounded-full border border-grey-300 checked:border-[5px] checked:border-primary-700 hover:outline-4 hover:outline hover:outline-offset-0 hover:outline-secondary-100 tsf-focus focus:hover:ring-2 ring-offset-0 ring-secondary-100;
+  }
+
+  .tsf-checkbox-input {
+    @apply appearance-none tsf-focus flex shrink-0 items-center justify-center !w-4 !h-4 border border-blue-500 rounded before:font-symbol checked:before:content-['check'] text-white text-[16px] cursor-pointer checked:bg-blue-500;
+  }
+
+  .tsf-field-error {
+    @apply text-bold-md flex items-start text-red-500 before:text-body-lg before:leading-5 before:content-['error'] before:font-symbol before:pr-1;
+  }
+}

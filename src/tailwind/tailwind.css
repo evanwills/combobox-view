@@ -1,0 +1,9 @@
+@import "tailwindcss/base";
+@import "tailwindcss/utilities";
+@import "tailwindcss/components";
+@import "./buttons.css";
+@import "./dialog.css";
+@import "./grids.css";
+@import "./inputs.css";
+@import "./typography.css";
+@import "./custom.css";
